@@ -3,11 +3,7 @@ import { LanguageContext } from './language-context';
 import type { Bilingual, Language } from '../types';
 
 function getInitialLang(): Language {
-  try {
-    const stored = localStorage.getItem('lang');
-    if (stored === 'zh' || stored === 'en') return stored;
-  } catch { /* SSR / blocked storage */ }
-  return 'zh';
+  return 'en';
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
