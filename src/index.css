@@ -271,6 +271,7 @@
   }
 
   :lang(zh-CN) .hero-manifesto {
+    font-family: 'Bebas Neue', 'Noto Sans SC', sans-serif;
     letter-spacing: 0;
     line-height: 0.88;
   }
