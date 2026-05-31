@@ -5,6 +5,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { CursorTrail } from './components/effects/CursorTrail';
 import { PointerAura } from './components/effects/PointerAura';
+import { BackgroundGlow } from './components/effects/BackgroundGlow';
 import { HeroSection } from './components/sections/HeroSection';
 import { AboutSection } from './components/sections/AboutSection';
 import { SkillsSection } from './components/sections/SkillsSection';
@@ -26,6 +27,7 @@ function App() {
       <PageWrapper>
         <CursorTrail />
         <PointerAura />
+        <BackgroundGlow />
         <Suspense fallback={null}>
           <Scene3D />
         </Suspense>

@@ -1,9 +1,9 @@
-import { type MouseEvent } from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import { GlitchText } from '../effects/GlitchText';
 import { NeonText } from '../effects/NeonText';
 import { ScrollReveal } from '../effects/ScrollReveal';
 import { ScrollIndicator } from '../ui/ScrollIndicator';
+import { TiltCard } from '../ui/TiltCard';
 import { profile } from '../../data/profile';
 
 const capabilityTracks = [
@@ -49,12 +49,6 @@ export function HeroSection() {
   const { t } = useLanguage();
   const mainName = t(profile.name);
   const subName = t(profile.nameSub);
-
-  const handleBoardMove = (e: MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    e.currentTarget.style.setProperty('--board-x', `${((e.clientX - rect.left) / rect.width) * 100}%`);
-    e.currentTarget.style.setProperty('--board-y', `${((e.clientY - rect.top) / rect.height) * 100}%`);
-  };
 
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden px-6 pb-32 pt-32 lg:pb-28">
@@ -114,10 +108,7 @@ export function HeroSection() {
         <ScrollReveal direction="left" delay={0.25} duration={0.7}>
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] border border-cyber-cyan/20" />
-            <div
-              className="capability-board glass scanline group relative overflow-hidden rounded-[2rem] p-6 md:p-8"
-              onMouseMove={handleBoardMove}
-            >
+            <TiltCard className="glass scanline rounded-[2rem] p-6 md:p-8" glowOpacity={0.08} tiltIntensity={6}>
               <div className="flex items-start justify-between gap-6 border-b border-cyber-border/80 pb-6">
                 <div>
                   <p className="font-mono text-xs uppercase tracking-[0.25em] text-cyber-cyan">
@@ -173,7 +164,7 @@ export function HeroSection() {
                   en: 'The loop: observe the scene -> ask the question -> find the signal -> design action -> ship the system -> review with data.',
                 })}
               </p>
-            </div>
+            </TiltCard>
           </div>
         </ScrollReveal>
       </div>
