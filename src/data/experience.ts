@@ -14,7 +14,7 @@ export const experiences: WorkExperience[] = [
       ],
       en: [
         'Operations: Managed full-cycle vehicle exception tracking, processed 500 vehicles daily, documented 10+ exception categories and drove SOP standardization',
-        'Efficiency: Rebuilt workflows with internal/external Agent and RPA tools, compressing a 4-hour process into 1 hour and covering ~3 people\'s workload',
+        'Efficiency: Rebuilt workflows with internal/external Agent and RPA tools, compressing a 4-hour process into 1 hour and covering the workload of ~3 people',
         'Systematization: Codified logistics routing, vehicle status judgment and penalty calculation, automating reports and eliminating human error',
       ],
     },
@@ -34,7 +34,7 @@ export const experiences: WorkExperience[] = [
       en: [
         'Requirements: Visited 3 schools, interviewed 6 teachers, mined pain points from feedback & complaints, completed needs assessment using RICE model',
         'Product Iteration: Participated in business logic optimization, shipped rule & feature similarity solutions, reduced grading time by 3 min, cut LLM usage to 30%',
-        'Process Optimization: Built workflow & Agent covering high-frequency monitoring scenarios, triggered 50 times/day, freed manpower and refined SOPs',
+        'Process Optimization: Built workflow & Agent covering high-frequency monitoring scenarios, triggered 50 times/day, freed up team capacity and refined SOPs',
       ],
     },
     technologies: { zh: ['RICE 模型', '工作流', 'Agent', 'LLM', 'SOP'], en: ['RICE Model', 'Workflow', 'Agent', 'LLM', 'SOP'] },
@@ -66,13 +66,13 @@ export const experiences: WorkExperience[] = [
     description: {
       zh: [
         '统筹规划：带领 4 人团队完成账号定位与直播策划，助力账号最高在线 150 人，1 min 留存提升 5%',
-        '策略迭代：用数据平台监测”五维四率”复盘直播节奏，持续调整策略，月 GMV 突破 30,000 元',
-        '成果复制：将直播流程细化为 SOP 并迁移到跨类目场景，获评”双优”并提升运营成功率',
+        '策略迭代：用数据平台监测“五维四率”复盘直播节奏，持续调整策略，月 GMV 突破 30,000 元',
+        '成果复制：将直播流程细化为 SOP 并迁移到跨类目场景，获评“双优”并提升运营成功率',
       ],
       en: [
         'Planning: Led a 4-person team for account positioning and live planning, boosting peak online to 150 viewers, improving 1-min retention by 5%',
         'Strategy: Monitored “5 dimensions & 4 rates” via data platforms, reviewed live rhythm, iterated strategy, monthly GMV exceeded ¥30,000',
-        'Replication: Refined live operation SOP for cross-category scenarios, rated “Double Excellent”, improved operational success rate',
+        'Replication: Refined live operation SOP for cross-category scenarios, earned “Double Excellent” distinction for operational excellence',
       ],
     },
     technologies: { zh: ['直播运营', 'GMV', '数据监控', '团队管理', 'SOP'], en: ['Live Streaming', 'GMV', 'Data Monitoring', 'Team Management', 'SOP'] },

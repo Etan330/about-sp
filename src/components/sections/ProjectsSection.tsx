@@ -5,6 +5,8 @@ import { useLanguage } from '../../hooks/useLanguage';
 
 export function ProjectsSection() {
   const { t } = useLanguage();
+  const featured = projects.filter((p) => p.featured);
+  const rest = projects.filter((p) => !p.featured);
 
   return (
     <section
@@ -24,10 +26,15 @@ export function ProjectsSection() {
           })}
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, i) => (
+        <div className="flex flex-col gap-6">
+          {featured.map((project, i) => (
             <ProjectCard key={project.id} project={project} index={i} />
           ))}
+          <div className="grid gap-6 md:grid-cols-2">
+            {rest.map((project, i) => (
+              <ProjectCard key={project.id} project={project} index={i + 1} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

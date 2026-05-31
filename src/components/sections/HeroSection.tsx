@@ -48,7 +48,6 @@ const capabilityTracks = [
 export function HeroSection() {
   const { t } = useLanguage();
   const mainName = t(profile.name);
-  const subName = t(profile.nameSub);
 
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden px-6 pb-32 pt-32 lg:pb-28">
@@ -85,7 +84,7 @@ export function HeroSection() {
           <ScrollReveal direction="up" delay={0.18} duration={0.6}>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-cyber-dim md:text-base">
               {t({
-                zh: '我的聚焦点不是“会用很多 AI 工具”，而是持续追问：它们能不能解决真实业务里的具体问题，并留下可复用的系统。',
+                zh: '我的聚焦点不是“会用很多 AI 工具“，而是持续追问：它们能不能解决真实业务里的具体问题，并留下可复用的系统。',
                 en: 'The point is not using many AI tools. The point is asking whether they can solve specific business problems and leave reusable systems behind.',
               })}
             </p>
@@ -121,8 +120,8 @@ export function HeroSection() {
                   </p>
                   <h2 className="mt-3 max-w-md font-display text-4xl leading-none text-cyber-text md:text-6xl">
                     {t({
-                      zh: `文科生自学 AI：好奇心让我从"想知道"走到"能做到"`,
-                      en: `${subName}: liberal arts student who learned AI through curiosity`,
+                      zh: `好奇心让我从"想知道"走到"能做到"`,
+                      en: 'liberal arts student who learned AI through curiosity',
                     })}
                   </h2>
                 </div>

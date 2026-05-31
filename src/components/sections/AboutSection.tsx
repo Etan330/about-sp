@@ -87,29 +87,28 @@ export function AboutSection() {
                 </p>
               </div>
 
-              <div className="metric-card rounded-3xl p-6">
-                <InfoRow
-                  label={t({ zh: '姓名', en: 'Name' })}
-                  value={t(profile.name)}
-                />
-              </div>
-              <div className="metric-card rounded-3xl p-6">
-                <InfoRow
-                  label={t({ zh: '地点', en: 'Location' })}
-                  value={t(profile.location)}
-                />
-              </div>
-              <div className="metric-card rounded-3xl p-6">
-                <InfoRow
-                  label={t({ zh: '年龄', en: 'Age' })}
-                  value={profile.age ?? ''}
-                />
-              </div>
-              <div className="metric-card rounded-3xl p-6">
-                <InfoRow
-                  label={t({ zh: 'MBTI', en: 'MBTI' })}
-                  value={profile.mbti ?? ''}
-                />
+              <div className="metric-card rounded-3xl p-6 sm:col-span-2">
+                <span className="font-mono text-xs uppercase tracking-[0.22em] text-cyber-cyan">
+                  {t({ zh: '基础信息', en: 'Profile' })}
+                </span>
+                <div className="mt-3 flex items-center divide-x divide-cyber-border/60">
+                  <div className="pr-5">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">{t({ zh: '姓名', en: 'Name' })}</span>
+                    <p className="mt-1 font-semibold text-cyber-text">{t(profile.name)}</p>
+                  </div>
+                  <div className="px-5">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">{t({ zh: '地点', en: 'Location' })}</span>
+                    <p className="mt-1 font-semibold text-cyber-text">{t(profile.location)}</p>
+                  </div>
+                  <div className="px-5">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">{t({ zh: '年龄', en: 'Age' })}</span>
+                    <p className="mt-1 font-semibold text-cyber-text">{profile.age ?? ''}</p>
+                  </div>
+                  <div className="pl-5">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">MBTI</span>
+                    <p className="mt-1 font-semibold text-cyber-text">{profile.mbti ?? ''}</p>
+                  </div>
+                </div>
               </div>
 
               {curiositySignals.map((signal) => (

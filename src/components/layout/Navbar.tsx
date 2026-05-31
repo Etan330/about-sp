@@ -4,13 +4,13 @@ import { useLanguage } from '../../hooks/useLanguage';
 import { LanguageToggle } from '../ui/LanguageToggle';
 
 const navLinks = [
-  { id: 'hero', zh: '首页', en: 'Home' },
-  { id: 'about', zh: '好奇心', en: 'Curiosity' },
-  { id: 'skills', zh: '工具箱', en: 'Toolbox' },
-  { id: 'experience', zh: '业务证据', en: 'Proof' },
-  { id: 'projects', zh: '实验室', en: 'Lab' },
-  { id: 'education', zh: '养分', en: 'Roots' },
-  { id: 'contact', zh: '联系', en: 'Contact' },
+  { id: 'hero', zh: '个人首页', en: 'Home' },
+  { id: 'about', zh: '好奇心引擎', en: 'Curiosity Engine' },
+  { id: 'skills', zh: '提问工具箱', en: 'Toolbox' },
+  { id: 'experience', zh: '业务证据', en: 'Experience' },
+  { id: 'projects', zh: '好奇心实验室', en: 'Projects' },
+  { id: 'education', zh: '教育背景', en: 'Education' },
+  { id: 'contact', zh: '联系方式', en: 'Contact' },
 ];
 
 export function Navbar() {
@@ -79,7 +79,7 @@ export function Navbar() {
           </span>
           <span>
             <span className="block font-mono text-[10px] uppercase tracking-[0.26em] text-cyber-dim">
-              Curiosity Lab
+              {t({ zh: '好奇心驱动的实践', en: 'Curiosity-Driven' })}
             </span>
             <span className="block font-display text-2xl leading-none text-gradient">
               Etan
