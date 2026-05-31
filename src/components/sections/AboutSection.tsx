@@ -74,7 +74,7 @@ export function AboutSection() {
                 <span className="font-mono text-xs uppercase tracking-[0.24em] text-cyber-cyan">
                   {t({ zh: '内核驱动', en: 'Core Drive' })}
                 </span>
-                <p className="mt-4 font-editorial text-5xl leading-none text-cyber-text md:text-6xl">
+                <p className="mt-4 font-display text-5xl leading-none text-cyber-text md:text-6xl">
                   Curiosity
                   <span className="text-cyber-cyan"> × </span>
                   AI
