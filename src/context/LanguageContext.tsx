@@ -2,11 +2,23 @@ import { useState, useCallback, useEffect, type ReactNode } from 'react';
 import { LanguageContext } from './language-context';
 import type { Bilingual, Language } from '../types';
 
+function getInitialLang(): Language {
+  try {
+    const stored = localStorage.getItem('lang');
+    if (stored === 'zh' || stored === 'en') return stored;
+  } catch { /* SSR / blocked storage */ }
+  return 'zh';
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Language>('zh');
+  const [lang, setLang] = useState<Language>(getInitialLang);
 
   const toggleLanguage = useCallback(() => {
-    setLang((prev) => prev === 'zh' ? 'en' : 'zh');
+    setLang((prev) => {
+      const next = prev === 'zh' ? 'en' : 'zh';
+      try { localStorage.setItem('lang', next); } catch { /* ignore */ }
+      return next;
+    });
   }, []);
 
   const t = useCallback(
