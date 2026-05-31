@@ -7,7 +7,7 @@ import { skills } from '../../data/skills';
 
 export function SkillsSection() {
   const { t } = useLanguage();
-  const accents = ['bg-[#d8b66d]/10', 'bg-[#8fae9f]/10', 'bg-[#d28a5c]/10'];
+  const accents = ['bg-[#d8b66d]/10', 'bg-[#8fae9f]/10', 'bg-[#d28a5c]/10', 'bg-[#9db5a8]/10'];
 
   return (
     <section
@@ -22,12 +22,12 @@ export function SkillsSection() {
 
         <div className="mb-8 max-w-3xl font-editorial text-xl leading-8 text-cyber-dim">
           {t({
-            zh: '我把技能分成三类：先用产品运营理解场景，再用数据找到信号，最后用 AI 与自动化把答案落地。',
-            en: 'My toolbox has three layers: product operations to understand the scene, data analysis to find the signal, and AI automation to ship the answer.',
+            zh: '好奇心驱动我自学这些工具——每一项都来自一个真实的问题。从理解场景到找信号，再到用 AI 自动化把答案落地，最后用证书为能力做注脚。',
+            en: 'Curiosity drove me to learn each tool — every skill started with a real question. From understanding the scene to finding signals, then shipping answers with AI automation, backed by recognized certifications.',
           })}
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {skills.map((category, ci) => (
             <ScrollReveal
               key={category.id}

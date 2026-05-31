@@ -72,19 +72,44 @@ export function AboutSection() {
             <div className="relative grid gap-4 sm:grid-cols-2">
               <div className="metric-card rounded-[1.75rem] p-7 sm:col-span-2">
                 <span className="font-mono text-xs uppercase tracking-[0.24em] text-cyber-cyan">
-                  {t({ zh: '核心定位', en: 'Positioning' })}
+                  {t({ zh: '内核驱动', en: 'Core Drive' })}
                 </span>
                 <p className="mt-4 font-display text-5xl leading-none text-cyber-text md:text-6xl">
-                  Curious
-                  <span className="text-cyber-cyan"> / </span>
-                  Builder
+                  Curiosity
+                  <span className="text-cyber-cyan"> × </span>
+                  AI
                 </p>
                 <p className="mt-4 max-w-xl text-sm leading-7 text-cyber-dim">
                   {t({
-                    zh: '我的优势不是单一岗位标签，而是能把好奇心拆成可执行的业务动作：问清楚、看数据、搭系统、交付结果。',
-                    en: 'My edge is not one job label. It is the ability to convert curiosity into business action: ask clearly, read data, build systems and deliver results.',
+                    zh: '文科出身，自学 Python、AI 工具与自动化——驱动我的不是专业对口，是好奇心。它让我追问"为什么"，也让我动手"做出来"。',
+                    en: 'Liberal arts background, self-taught in Python, AI tools and automation. What drives me isn\'t a matching degree — it\'s curiosity. It makes me ask "why?" and pushes me to "build it."',
                   })}
                 </p>
+              </div>
+
+              <div className="metric-card rounded-3xl p-6">
+                <InfoRow
+                  label={t({ zh: '姓名', en: 'Name' })}
+                  value={t(profile.name)}
+                />
+              </div>
+              <div className="metric-card rounded-3xl p-6">
+                <InfoRow
+                  label={t({ zh: '地点', en: 'Location' })}
+                  value={t(profile.location)}
+                />
+              </div>
+              <div className="metric-card rounded-3xl p-6">
+                <InfoRow
+                  label={t({ zh: '年龄', en: 'Age' })}
+                  value={profile.age ?? ''}
+                />
+              </div>
+              <div className="metric-card rounded-3xl p-6">
+                <InfoRow
+                  label={t({ zh: 'MBTI', en: 'MBTI' })}
+                  value={profile.mbti ?? ''}
+                />
               </div>
 
               {curiositySignals.map((signal) => (
@@ -96,17 +121,6 @@ export function AboutSection() {
                   />
                 </div>
               ))}
-
-              <div className="metric-card rounded-3xl p-6 sm:col-span-2">
-                <InfoRow
-                  label={t({ zh: '基础信息', en: 'Profile' })}
-                  value={`${t(profile.name)} / ${t(profile.location)} / ${profile.age ?? ''} / ${profile.mbti ?? ''}`}
-                  detail={t({
-                    zh: '长沙理工大学工商管理硕士在读，一周五天可实习半年。',
-                    en: 'M.S. candidate in Business Administration at CSUST; available 5 days per week for a half-year internship.',
-                  })}
-                />
-              </div>
               <div className="absolute -right-3 -top-3 h-7 w-7 rounded-full bg-cyber-cyan animate-pulse-glow" />
               <div className="absolute -bottom-3 -left-3 h-5 w-5 rounded-full bg-cyber-purple animate-pulse-glow" />
             </div>

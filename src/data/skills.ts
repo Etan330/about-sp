@@ -35,4 +35,14 @@ export const skills: SkillCategory[] = [
       { name: { zh: '影刀 RPA', en: 'ShadowBot RPA' }, percentage: 86, color: '#9db5a8' },
     ],
   },
+  {
+    id: 'certificates',
+    categoryName: { zh: '证书与资质', en: 'Certificates' },
+    items: [
+      { name: { zh: 'CET-6', en: 'CET-6' }, percentage: 85, color: '#d8b66d' },
+      { name: { zh: '计算机二级（MS Office）', en: 'Computer Level 2 (MS Office)' }, percentage: 98, color: '#b9c38d' },
+      { name: { zh: '中级电子商务师', en: 'E-Commerce Specialist' }, percentage: 85, color: '#d28a5c' },
+      { name: { zh: '驾驶证（C1）', en: 'Driver License (C1)' }, percentage: 100, color: '#8fae9f' },
+    ],
+  },
 ];

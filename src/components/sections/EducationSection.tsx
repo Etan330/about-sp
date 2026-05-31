@@ -6,6 +6,8 @@ import { ScrollReveal } from '../effects/ScrollReveal';
 import { education } from '../../data/education';
 
 export function EducationSection() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="education"
@@ -16,6 +18,13 @@ export function EducationSection() {
           number="05."
           title={{ zh: '好奇心的养分', en: 'Roots of Curiosity' }}
         />
+
+        <div className="mb-8 max-w-3xl font-editorial text-xl leading-8 text-cyber-dim">
+          {t({
+            zh: '工商管理 + 电子商务——文科背景让我更关注"人"的需求，而好奇心驱动我补上了技术这一半。',
+            en: 'Business Administration + E-Commerce — a liberal arts foundation taught me to focus on human needs; curiosity filled in the technical half.',
+          })}
+        </div>
 
         <div className="max-w-5xl space-y-8 lg:space-y-10">
           {education.map((edu, i) => (

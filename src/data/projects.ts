@@ -4,12 +4,12 @@ export const projects: Project[] = [
   {
     id: 'proj-1',
     title: { zh: '抖音直播消费者行为研究', en: 'Douyin Live Consumer Behavior Research' },
-    subtitle: { zh: '把一个好奇的问题做成可验证研究', en: 'Turning one question into testable research' },
+    subtitle: { zh: '独立学术研究项目', en: 'Independent Academic Research' },
     description: {
-      zh: '从“观众为什么留下来”出发，基于开源项目搭建爬虫，采集 3,000 场直播并处理 1,000,000+ 二手数据；设计实验、完成 100 人预实验迭代、回收 1000+ 有效问卷，用数据验证 FBM 新 signal 对直播绩效的影响路径，论文投稿 SSCI Q2。',
-      en: 'Started with the question of why viewers stay. Built a crawler, collected 3,000 live sessions and processed 1,000,000+ data points; designed experiments, iterated through a 100-person pilot, collected 1000+ valid questionnaires, and tested a new FBM signal for live performance. Submitted to SSCI Q2.',
+      zh: '从”观众为什么留下来”出发，基于 GitHub 开源项目搭建爬虫，爬取 3,000 场直播数据，处理超 1,000,000+ 二手数据；依理论模型设计实验，经 100 人预实验迭代，回收 1000+ 有效问卷；通过 FBM 提出新 signal，验证其对直播绩效的影响路径，论文投稿 SSCI Q2。',
+      en: 'Starting from the question of why viewers stay, built a crawler based on open-source project, scraped 3,000 live streaming sessions, processed 1,000,000+ secondary data points. Designed experiments based on theoretical models, iterated through 100-person pilot, collected 1000+ valid questionnaires. Proposed new signal via FBM for Douyin live streaming, verified its impact path on live performance, paper submitted to SSCI Q2.',
     },
-    technologies: { zh: ['Python', '网络爬虫', 'SPSS', 'Stata', 'FBM', 'SSCI'], en: ['Python', 'Crawler', 'SPSS', 'Stata', 'FBM', 'SSCI'] },
+    technologies: { zh: ['Python', '网络爬虫', 'SPSS', 'Stata', 'FBM', 'SSCI'], en: ['Python', 'Web Crawler', 'SPSS', 'Stata', 'FBM', 'SSCI'] },
     links: [],
     featured: true,
   },

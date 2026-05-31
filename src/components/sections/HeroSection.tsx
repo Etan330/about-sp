@@ -8,40 +8,40 @@ import { profile } from '../../data/profile';
 
 const capabilityTracks = [
   {
-    title: { zh: '提出更好的问题', en: 'Ask Better Questions' },
+    title: { zh: '因为好奇，我走进了真实场景', en: 'Curiosity led me into real scenarios' },
     proof: {
-      zh: '从学校访谈、教师反馈、客诉与业务异常里，找到真正值得解决的卡点。',
-      en: 'Find the real bottleneck through interviews, feedback, complaints and operational exceptions.',
+      zh: '走访学校、访谈教师、拆解用户反馈与客诉，用 RICE 模型判断优先级。',
+      en: 'Visited schools, interviewed teachers, analyzed feedback — driven by curiosity about real user needs.',
     },
     output: {
-      zh: '把模糊需求拆成 RICE 优先级、迭代建议、业务规则与 SOP。',
-      en: 'Turn ambiguity into RICE priorities, iteration proposals, business rules and SOP.',
+      zh: '产出需求评估、功能迭代建议与可执行的业务规则，推动 SOP 标准化落地。',
+      en: 'Delivered requirement assessment, iteration proposals and executable business rules, pushed SOP standardization.',
     },
-    label: { zh: '好奇心', en: 'Curiosity' },
+    label: { zh: '用户洞察', en: 'User Insight' },
   },
   {
-    title: { zh: '让数据回答问题', en: 'Let Data Answer' },
+    title: { zh: '因为好奇，我追问数据背后的原因', en: 'Curiosity made me dig into the data' },
     proof: {
-      zh: '处理直播、电商、车源流转与用户行为数据，不止看报表，而是追问原因。',
-      en: 'Analyze live commerce, e-commerce, vehicle flow and user behavior data beyond dashboards.',
+      zh: '分析用户行为、漏斗表现和直播数据，不停追问"为什么这里掉了"。',
+      en: 'Analyzed behavior, funnels and live data, constantly asking "why did it drop here?"',
     },
     output: {
-      zh: '推动 Push 活跃提升 15%、100W+ 数据研究、内容选题与复盘机制落地。',
-      en: 'Shipped 15% activity lift via push, 1M+ data research, content planning and review loops.',
+      zh: '推动 Push 活跃提升 15%，处理 100W+ 数据研究，建立内容选题与复盘机制。',
+      en: 'Drove 15% activity lift via push, processed 1M+ data points, established content planning and review loops.',
     },
-    label: { zh: '信号', en: 'Signal' },
+    label: { zh: '数据驱动', en: 'Data-Driven' },
   },
   {
-    title: { zh: '把 AI 变成手边工具', en: 'Make AI Usable' },
+    title: { zh: '因为好奇，我自学 AI 并落地自动化', en: 'Curiosity drove me to learn AI & automate' },
     proof: {
-      zh: '用 Codex、Cursor、Claude Code、Agent、RPA 与 workflow 拆解重复动作。',
-      en: 'Use Codex, Cursor, Claude Code, Agent, RPA and workflow to decompose repetition.',
+      zh: '自学 Python、Claude Code、N8N、RPA，拆解高频流程并搭建 Agent。',
+      en: 'Self-taught Python, Claude Code, N8N and RPA, then built Agents for repetitive workflows.',
     },
     output: {
-      zh: '把 4 小时流程压缩到 1 小时，并独立做出 7 个自用 AI 微产品。',
-      en: 'Compressed a 4-hour process into 1 hour and built 7 personal AI micro-products.',
+      zh: '把 4 小时流程压缩到 1 小时，覆盖约 3 人工作量，并独立做出 7 个自用 AI 微产品。',
+      en: 'Compressed a 4-hour process into 1 hour covering ~3 people\'s work, and built 7 personal AI micro-products.',
     },
-    label: { zh: '落地', en: 'Shipping' },
+    label: { zh: 'AI 落地', en: 'AI Delivery' },
   },
 ];
 
@@ -57,18 +57,23 @@ export function HeroSection() {
         <div>
           <ScrollReveal direction="up" duration={0.8}>
             <div className="section-kicker text-xs text-cyber-cyan">
-              {t({
-                zh: `${mainName} / ${subName} | AI is all you need when curiosity needs to ship`,
-                en: `${mainName} / ${subName} | AI is all you need when curiosity needs to ship`,
-              })}
+              {t({ zh: '好奇心驱动的 AI 实践', en: 'Curiosity-Driven AI Practice' })}
             </div>
           </ScrollReveal>
 
-          <ScrollReveal direction="up" delay={0.08} duration={0.8}>
-            <h1 className="hero-manifesto mt-6 max-w-5xl font-display text-[4rem] font-black leading-[0.88] text-cyber-text md:text-[5.8rem] lg:text-[6.4rem] xl:text-[6.9rem] 2xl:text-[7.7rem]">
-              <span className="block">Curiosity</span>
+          <ScrollReveal direction="up" delay={0.06} duration={0.8}>
+            <GlitchText
+              text={mainName}
+              as="h1"
+              className="mt-6 font-display text-[6.5rem] font-black leading-[0.82] tracking-tight text-cyber-text md:text-[10rem] lg:text-[13rem]"
+            />
+          </ScrollReveal>
+
+          <ScrollReveal direction="up" delay={0.12} duration={0.8}>
+            <p className="hero-manifesto mt-6 max-w-5xl font-display text-[4rem] font-black leading-[0.88] text-cyber-text md:text-[5.8rem] lg:text-[6.4rem]">
+              Curiosity
               <span className="block text-gradient">is all you need.</span>
-            </h1>
+            </p>
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={0.15} duration={0.6}>
@@ -115,19 +120,14 @@ export function HeroSection() {
                     {t({ zh: '能力证据', en: 'Capability Evidence' })}
                   </p>
                   <h2 className="mt-3 max-w-md font-display text-4xl leading-none text-cyber-text md:text-6xl">
-                    <GlitchText
-                      text={mainName}
-                      as="span"
-                      className="mb-2 block text-cyber-cyan"
-                    />
                     {t({
-                      zh: '不是简历堆叠，而是一套好奇心工作流',
-                      en: `${subName} turns curiosity into execution`,
+                      zh: `文科生自学 AI：好奇心让我从"想知道"走到"能做到"`,
+                      en: `${subName}: liberal arts student who learned AI through curiosity`,
                     })}
                   </h2>
                 </div>
                 <span className="shrink-0 rounded-full border border-cyber-cyan/30 px-3 py-1 font-mono text-xs text-cyber-cyan">
-                  LOOP
+                  CURIOSITY
                 </span>
               </div>
 
@@ -160,8 +160,8 @@ export function HeroSection() {
 
               <p className="mt-6 max-w-md text-sm leading-7 text-cyber-dim">
                 {t({
-                  zh: '完整链路：观察场景 -> 提出问题 -> 找到信号 -> 设计动作 -> 跑通系统 -> 用数据复盘。',
-                  en: 'The loop: observe the scene -> ask the question -> find the signal -> design action -> ship the system -> review with data.',
+                  zh: '不是技能堆砌，而是一条好奇心驱动的完整链路：走进场景 → 追问原因 → 动手落地 → 用数据验证。',
+                  en: 'Not a skill checklist, but a curiosity-driven loop: explore the scenario → dig into the "why" → build it → validate with data.',
                 })}
               </p>
             </TiltCard>

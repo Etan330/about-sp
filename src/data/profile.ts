@@ -4,8 +4,8 @@ export const profile: ProfileData = {
   name: { zh: '孙鹏', en: 'Etan' },
   nameSub: { zh: 'Etan', en: '孙鹏' },
   titles: {
-    zh: ['AI 产品运营', '数据分析', '自动化落地'],
-    en: ['AI Product Ops', 'Data Analysis', 'Automation Delivery'],
+    zh: ['好奇心驱动的 AI 探索者', '数据分析与用户洞察', '自动化流程构建者'],
+    en: ['Curiosity-driven AI Explorer', 'Data & User Insight', 'Automation Builder'],
   },
   tagline: {
     zh: 'Curiosity is all you need. AI is how I turn questions into shipped workflows.',
@@ -13,14 +13,14 @@ export const profile: ProfileData = {
   },
   bio: {
     zh: [
-      '我是一个文科背景出身的 AI 产品运营候选人。对我来说，好奇心不是“多试几个工具”，而是追问：这个场景里真正卡住人的问题是什么，AI 能不能把它变成更快、更稳、更可复用的流程。',
-      '这份好奇心已经被放进真实业务里验证：在懂车帝把 4 小时流程压缩到 1 小时，在科大讯飞用 workflow 与 Agent 覆盖高频盯盘，在高途把用户需求、内容选题和增长复盘串成 SOP。',
-      '我也会把兴趣做成可运行的小系统：每日学习推送、个人网站、抖音视频转知识库、AI 热点解读、RSS 综合热点、短线股票推送、Codex 额度监控。它们不只是作品，而是我持续学习 AI 的方式。',
+      '我是一个文科背景出身的 AI 实践者。对我来说，好奇心不是”多试几个工具”，而是追问：这个场景里真正卡住人的问题是什么，AI 能不能把它变成更快、更稳、更可复用的流程。从”想知道”到”能做到”，好奇心是我跨越专业边界的最好老师。',
+      '数据洞察：实习期间通过分析用户行为路径定位运营问题，短信 Push 上线后用户活跃提升 15%。在懂车帝用 Agent 与 RPA 把 4 小时流程压缩到 1 小时、覆盖约 3 人工作量；在科大讯飞搭建 workflow + Agent 覆盖高频盯盘、日均触发 50 次、显著释放人力；在高途用 JTBD 梳理 150+ 需求、实现曝光 200,000+、私域拉新 100+，每次实习都产出了可复用的 SOP。',
+      '自我驱动：独立开发 7 个自用 AI 微产品——每日学习推送、个人网站、抖音视频转知识库、AI 热点新闻推送与解读、RSS 综合热点、短线股票推送、Codex 额度监控。它们不只是作品，而是我持续学习 AI、把兴趣变成可运行系统的方式。',
     ],
     en: [
-      'I come from a liberal arts and business background, then taught myself AI tools by turning questions into working systems. Curiosity, to me, means finding the real bottleneck in a scene and asking whether AI can make the process faster, stabler and reusable.',
-      'That curiosity has been tested in real operations: compressing a 4-hour workflow into 1 hour at Dcar, covering high-frequency monitoring with workflow + Agent at iFlytek, and turning user needs, content planning and growth review into SOP at GOTU.',
-      'I also build small systems for myself: a daily learning digest, this portfolio, a Douyin-to-knowledge-base pipeline, AI news interpretation, RSS briefings, stock alerts and a Codex usage monitor. They are not just projects; they are how I keep learning.',
+      'I come from a liberal arts and business background, then taught myself AI by turning questions into working systems. To me, curiosity isn\'t about trying every tool — it\'s about finding the real bottleneck and asking whether AI can make it faster, stabler, and more reusable. From “I wonder” to “I built it,” curiosity has been the best teacher across disciplines.',
+      'Data Insight: Analyzed user behavior paths during internships, identified operational issues, improved user activity by 15% via push campaigns. At Dcar, compressed a 4-hour workflow into 1 hour using Agent + RPA, covering ~3 people\'s workload. At iFlytek, built workflow + Agent for high-frequency monitoring, triggering 50 times/day. At GOTU, used JTBD to analyze 150+ needs, achieved 200,000+ impressions and 100+ private-domain conversions. Every internship delivered reusable SOPs.',
+      'Self-driven: Independently built 7 personal AI micro-products — daily learning digest, portfolio site, Douyin-to-knowledge-base pipeline, AI news briefing, RSS insight aggregation, stock alert bot, and Codex usage monitor. They are not just projects; they are how I keep learning and turn curiosity into running systems.',
     ],
   },
   socials: [
