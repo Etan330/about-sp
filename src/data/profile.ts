@@ -8,8 +8,8 @@ export const profile: ProfileData = {
     en: ['Curiosity-driven AI Explorer', 'Data & User Insight', 'Automation Builder'],
   },
   tagline: {
-    zh: 'BTW，AI is all you need.',
-    en: 'BTW, AI is all you need.',
+    zh: 'BTW，AI is all you need, too.',
+    en: 'BTW, AI is all you need, too.',
   },
   bio: {
     zh: [
@@ -27,7 +27,7 @@ export const profile: ProfileData = {
     { platform: 'Email', url: 'mailto:zixinzhuzhu@163.com', icon: 'email' },
   ],
   email: 'zixinzhuzhu@163.com',
-  phone: '13548637160',
+  phone: '135 4863 7160',
   location: { zh: '湖南长沙', en: 'Changsha, Hunan' },
   age: '23',
   mbti: 'INTJ',

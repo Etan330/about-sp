@@ -5,10 +5,10 @@ import { LanguageToggle } from '../ui/LanguageToggle';
 
 const navLinks = [
   { id: 'hero', zh: '个人首页', en: 'Home' },
-  { id: 'about', zh: '好奇心引擎', en: 'Curiosity Engine' },
-  { id: 'skills', zh: '提问工具箱', en: 'Toolbox' },
-  { id: 'experience', zh: '业务证据', en: 'Experience' },
-  { id: 'projects', zh: '好奇心实验室', en: 'Projects' },
+  { id: 'about', zh: '关于我', en: 'About' },
+  { id: 'skills', zh: '专业技能', en: 'Skills' },
+  { id: 'experience', zh: '工作经历', en: 'Experience' },
+  { id: 'projects', zh: '项目展示', en: 'Projects' },
   { id: 'education', zh: '教育背景', en: 'Education' },
   { id: 'contact', zh: '联系方式', en: 'Contact' },
 ];

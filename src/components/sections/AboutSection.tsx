@@ -74,7 +74,7 @@ export function AboutSection() {
                 <span className="font-mono text-xs uppercase tracking-[0.24em] text-cyber-cyan">
                   {t({ zh: '内核驱动', en: 'Core Drive' })}
                 </span>
-                <p className="mt-4 font-display text-5xl leading-none text-cyber-text md:text-6xl">
+                <p className="mt-4 font-editorial text-5xl leading-none text-cyber-text md:text-6xl">
                   Curiosity
                   <span className="text-cyber-cyan"> × </span>
                   AI
@@ -91,20 +91,23 @@ export function AboutSection() {
                 <span className="font-mono text-xs uppercase tracking-[0.22em] text-cyber-cyan">
                   {t({ zh: '基础信息', en: 'Profile' })}
                 </span>
-                <div className="mt-3 flex items-center divide-x divide-cyber-border/60">
-                  <div className="pr-5">
+                <div className="mt-3 flex items-center justify-between gap-4">
+                  <div>
                     <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">{t({ zh: '姓名', en: 'Name' })}</span>
                     <p className="mt-1 font-semibold text-cyber-text">{t(profile.name)}</p>
                   </div>
-                  <div className="px-5">
+                  <div className="h-8 w-px bg-cyber-border/40" />
+                  <div>
                     <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">{t({ zh: '地点', en: 'Location' })}</span>
                     <p className="mt-1 font-semibold text-cyber-text">{t(profile.location)}</p>
                   </div>
-                  <div className="px-5">
+                  <div className="h-8 w-px bg-cyber-border/40" />
+                  <div>
                     <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">{t({ zh: '年龄', en: 'Age' })}</span>
                     <p className="mt-1 font-semibold text-cyber-text">{profile.age ?? ''}</p>
                   </div>
-                  <div className="pl-5">
+                  <div className="h-8 w-px bg-cyber-border/40" />
+                  <div>
                     <span className="text-[10px] uppercase tracking-[0.2em] text-cyber-dim">MBTI</span>
                     <p className="mt-1 font-semibold text-cyber-text">{profile.mbti ?? ''}</p>
                   </div>
@@ -112,7 +115,7 @@ export function AboutSection() {
               </div>
 
               {curiositySignals.map((signal) => (
-                <div key={t(signal.label)} className="metric-card rounded-3xl p-6">
+                <div key={t(signal.label)} className="metric-card rounded-3xl p-5">
                   <InfoRow
                     label={t(signal.label)}
                     value={t(signal.value)}
@@ -133,11 +136,13 @@ export function AboutSection() {
 function InfoRow({ label, value, detail }: { label: string; value: string; detail?: string }) {
   return (
     <div>
-      <span className="font-mono text-xs uppercase tracking-[0.22em] text-cyber-cyan">
-        {label}
-      </span>
-      <p className="mt-2 text-lg font-semibold text-cyber-text">{value}</p>
-      {detail && <p className="mt-3 text-sm leading-6 text-cyber-dim">{detail}</p>}
+      <div className="flex items-baseline justify-between gap-3">
+        <span className="font-mono text-xs uppercase tracking-[0.22em] text-cyber-cyan">
+          {label}
+        </span>
+        <span className="text-lg font-semibold text-cyber-text shrink-0">{value}</span>
+      </div>
+      {detail && <p className="mt-2 text-sm leading-6 text-cyber-dim">{detail}</p>}
     </div>
   );
 }

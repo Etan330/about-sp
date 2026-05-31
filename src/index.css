@@ -294,6 +294,10 @@
     text-wrap: balance;
   }
 
+  .font-contact {
+    font-family: 'Times New Roman', 'Noto Serif SC', serif;
+  }
+
   .animate-pulse-glow {
     animation: pulse-glow 2.8s ease-in-out infinite;
   }
