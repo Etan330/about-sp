@@ -49,7 +49,7 @@ export function ContactSection() {
                 <span className="font-mono text-xs uppercase tracking-[0.24em] text-cyber-cyan">
                   Email
                 </span>
-                <p className="mt-3 break-all font-contact text-lg text-cyber-text transition-colors group-hover:text-cyber-cyan">
+                <p className="mt-3 break-all font-mono text-sm text-cyber-text transition-colors group-hover:text-cyber-cyan">
                   {profile.email}
                 </p>
                 <span className="mt-4 block text-xs text-cyber-dim">
@@ -69,7 +69,7 @@ export function ContactSection() {
                   <span className="font-mono text-xs uppercase tracking-[0.24em] text-cyber-cyan">
                     {t({ zh: '电话', en: 'Phone' })}
                   </span>
-                  <p className="mt-3 font-contact text-lg text-cyber-text transition-colors group-hover:text-cyber-cyan">
+                  <p className="mt-3 font-mono text-sm text-cyber-text transition-colors group-hover:text-cyber-cyan">
                     {profile.phone}
                   </p>
                   <span className="mt-4 block text-xs text-cyber-dim">
@@ -97,7 +97,7 @@ export function ContactSection() {
                   <span className="font-mono text-xs uppercase tracking-[0.24em] text-cyber-cyan">
                     {social.platform}
                   </span>
-                  <p className="mt-3 break-all font-contact text-lg text-cyber-text transition-colors group-hover:text-cyber-cyan">
+                  <p className="mt-3 break-all font-mono text-sm text-cyber-text transition-colors group-hover:text-cyber-cyan">
                     {social.url.replace('https://', '').replace('mailto:', '')}
                   </p>
                   <span className="mt-4 block text-xs text-cyber-dim">
