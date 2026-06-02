@@ -8,17 +8,17 @@ export const experiences: WorkExperience[] = [
     period: { zh: '2026.03 - 2026.06', en: '2026.03 - 2026.06' },
     description: {
       zh: [
-        '业务运营：承接车辆全链路异常与流转跟进，日均处理 500 台车辆状态，沉淀 10+ 异常口径并推动 SOP 标准化',
-        '流程提效：用内外部 Agent 与 RPA 重构业务流程，将 4 小时工作压缩至 1 小时，覆盖约 3 人工作量',
-        '规则沉淀：将物流判断、车源状态判断、违约金计算等机械动作规则化，报告输出自动化，显著降低人工误差',
+        '流程诊断：承接收车、入库、整备、上架链路异常跟进，日均处理 500 台车辆状态，沉淀 10+ 异常口径并推动 SOP 标准化',
+        '规则抽象：将车源状态、物流方式与超期天数等判断规则化，约 80% 状态核查由人工转为公式识别，物流查询由几百次降至 5-6 次',
+        'AI 提效：用公式、Agent、lark-cli 与 RPA 重构高频流程，将异常跟进从 3-5 小时压缩至 0.5-1 小时，方案由后续同事持续复用',
       ],
       en: [
-        'Operations: Managed full-cycle vehicle exception tracking, processed 500 vehicles daily, documented 10+ exception categories and drove SOP standardization',
-        'Efficiency: Rebuilt workflows with internal/external Agent and RPA tools, compressing a 4-hour process into 1 hour and covering the workload of ~3 people',
-        'Systematization: Codified logistics routing, vehicle status judgment and penalty calculation, automating reports and eliminating human error',
+        'Workflow Diagnosis: Managed exception tracking across collection, warehousing, refurbishment and listing, processed 500 vehicles daily, documented 10+ exception categories and drove SOP standardization',
+        'Rule Design: Codified vehicle status, logistics routing and overdue-day calculations; shifted about 80% of status checks to formula-based recognition and reduced logistics queries from hundreds to 5-6',
+        'AI Delivery: Rebuilt repetitive workflows with formulas, Agent, lark-cli and RPA, reducing exception follow-up from 3-5 hours to 0.5-1 hour; the system remained in use after handoff',
       ],
     },
-    technologies: { zh: ['Agent', 'RPA', 'SOP', '自动化', '工作流'], en: ['Agent', 'RPA', 'SOP', 'Automation', 'Workflow'] },
+    technologies: { zh: ['Agent', 'lark-cli', 'RPA', 'SOP', '规则设计'], en: ['Agent', 'lark-cli', 'RPA', 'SOP', 'Rule Design'] },
   },
   {
     id: 'exp-2',

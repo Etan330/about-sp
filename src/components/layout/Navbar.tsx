@@ -79,10 +79,10 @@ export function Navbar() {
           </span>
           <span>
             <span className="block font-mono text-[10px] uppercase tracking-[0.26em] text-cyber-dim">
-              {t({ zh: '好奇心驱动的实践', en: 'Curiosity-Driven' })}
+              {t({ zh: 'AI 与自动化实践', en: 'AI & AUTOMATION' })}
             </span>
             <span className="block font-display text-2xl leading-none text-gradient">
-              Etan
+              Etan Musk
             </span>
           </span>
         </button>

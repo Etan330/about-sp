@@ -16,13 +16,13 @@ export function ProjectsSection() {
       <div className="max-w-7xl mx-auto w-full">
         <SectionTitle
           number="04."
-          title={{ zh: '好奇心实验室', en: 'Curiosity Lab' }}
+          title={{ zh: '项目实践', en: 'Projects' }}
         />
 
         <div className="mb-8 max-w-3xl font-editorial text-xl leading-8 text-cyber-dim">
           {t({
-            zh: '这里不是作品堆叠，而是三个问题：观众为什么留下来？重复工作能否自动跑？学习兴趣能否变成每天运行的系统？',
-            en: 'This is not a pile of projects. It is three questions: why do viewers stay, can repetitive work run itself, and can learning interest become a daily system?',
+            zh: '三个项目分别对应研究能力、自动化动手能力和业务落地能力：从提出问题，到验证路径，再到交付可运行的系统。',
+            en: 'Three projects show research, automation and business delivery: from framing the problem and validating the path to shipping a working system.',
           })}
         </div>
 

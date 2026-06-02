@@ -16,13 +16,13 @@ export function EducationSection() {
       <div className="max-w-7xl mx-auto w-full">
         <SectionTitle
           number="05."
-          title={{ zh: '好奇心的养分', en: 'Roots of Curiosity' }}
+          title={{ zh: '教育背景', en: 'Education' }}
         />
 
         <div className="mb-8 max-w-3xl font-editorial text-xl leading-8 text-cyber-dim">
           {t({
-            zh: '工商管理 + 电子商务——文科背景让我更关注"人"的需求，而好奇心驱动我补上了技术这一半。',
-            en: 'Business Administration + E-Commerce — a liberal arts foundation taught me to focus on human needs; curiosity filled in the technical half.',
+            zh: '工商管理 + 电子商务——商业与用户视角构成了我的基础，技术工具帮助我把想法真正落地。',
+            en: 'Business Administration + E-Commerce — business and user perspectives form my foundation, while technical tools help me ship ideas.',
           })}
         </div>
 

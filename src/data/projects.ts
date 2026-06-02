@@ -30,10 +30,10 @@ export const projects: Project[] = [
     title: { zh: '业务流程自动化改造', en: 'Operations Automation Redesign' },
     subtitle: { zh: '把重复动作变成可追踪、可复用的规则', en: 'Turning repetition into traceable rules' },
     description: {
-      zh: '在懂车帝和科大讯飞的实习中，将车源状态判断、物流判断、违约金计算、盯盘通知等高频动作规则化，通过 Agent、RPA 与 workflow 减少人工判断成本，让流程从“人盯人跑“变成“系统稳定触发”。',
-      en: 'Across Dcar and iFlytek internships, converted repetitive tasks such as vehicle status judgment, logistics routing, penalty calculation and monitoring alerts into rules, then used Agent, RPA and workflow to reduce manual judgment and make execution traceable.',
+      zh: '在懂车帝和科大讯飞的实习中，将车源状态判断、物流方式、超期计算、盯盘通知等高频动作规则化，通过公式、Agent、lark-cli、RPA 与 workflow 减少人工判断成本，让流程从“人盯人跑“变成“系统稳定触发”。',
+      en: 'Across Dcar and iFlytek internships, converted repetitive tasks such as vehicle status checks, logistics routing, overdue-day calculations and monitoring alerts into rules, then used formulas, Agent, lark-cli, RPA and workflow to reduce manual judgment and make execution traceable.',
     },
-    technologies: { zh: ['Agent', 'RPA', 'SOP', '飞书 Base', '规则引擎'], en: ['Agent', 'RPA', 'SOP', 'Lark Base', 'Rule Engine'] },
+    technologies: { zh: ['Agent', 'lark-cli', 'RPA', 'SOP', '规则设计'], en: ['Agent', 'lark-cli', 'RPA', 'SOP', 'Rule Design'] },
     links: [],
     featured: false,
   },

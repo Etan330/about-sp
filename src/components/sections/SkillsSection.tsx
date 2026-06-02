@@ -16,13 +16,13 @@ export function SkillsSection() {
       <div className="max-w-7xl mx-auto w-full">
         <SectionTitle
           number="02."
-          title={{ zh: '提问工具箱', en: 'Question Toolbox' }}
+          title={{ zh: '能力栈', en: 'Capability Stack' }}
         />
 
         <div className="mb-8 max-w-3xl font-editorial text-xl leading-8 text-cyber-dim">
           {t({
-            zh: '好奇心驱动我自学这些工具——每一项都来自一个真实的问题。从理解场景到找信号，再到用 AI 自动化把答案落地，最后用证书为能力做注脚。',
-            en: 'Curiosity drove me to learn each tool — every skill started with a real question. From understanding the scene to finding signals, then shipping answers with AI automation, backed by recognized certifications.',
+            zh: '能力围绕四个方向组织：理解业务、分析数据、交付自动化方案，以及支持稳定执行的基础资质。',
+            en: 'My capabilities are organized around four areas: understanding operations, analyzing data, shipping automation and maintaining reliable execution.',
           })}
         </div>
 

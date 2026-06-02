@@ -3,7 +3,7 @@ import { SectionTitle } from '../ui/SectionTitle';
 import { ScrollReveal } from '../effects/ScrollReveal';
 import { profile } from '../../data/profile';
 
-const curiositySignals = [
+const proofSignals = [
   {
     value: { zh: '7', en: '7' },
     label: { zh: '自用 AI 微产品', en: 'AI micro-products' },
@@ -13,7 +13,7 @@ const curiositySignals = [
     },
   },
   {
-    value: { zh: '4h -> 1h', en: '4h -> 1h' },
+    value: { zh: '3-5h -> 0.5-1h', en: '3-5h -> 0.5-1h' },
     label: { zh: '流程压缩', en: 'Workflow compression' },
     detail: {
       zh: '在懂车帝用 Agent、RPA 与规则化方法重构高频业务流程。',
@@ -49,7 +49,7 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto w-full">
         <SectionTitle
           number="01."
-          title={{ zh: '好奇心引擎', en: 'Curiosity Engine' }}
+          title={{ zh: '关于我', en: 'About Me' }}
         />
 
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -72,17 +72,19 @@ export function AboutSection() {
             <div className="relative grid gap-4 sm:grid-cols-2">
               <div className="metric-card rounded-[1.75rem] p-7 sm:col-span-2">
                 <span className="font-mono text-xs uppercase tracking-[0.24em] text-cyber-cyan">
-                  {t({ zh: '内核驱动', en: 'Core Drive' })}
+                  {t({ zh: '能力主线', en: 'Core Thread' })}
                 </span>
                 <p className="mt-4 font-display text-5xl leading-none text-cyber-text md:text-6xl">
-                  Curiosity
+                  Business
+                  <span className="text-cyber-cyan"> × </span>
+                  Data
                   <span className="text-cyber-cyan"> × </span>
                   AI
                 </p>
                 <p className="mt-4 max-w-xl text-sm leading-7 text-cyber-dim">
                   {t({
-                    zh: '文科出身，自学 Python、AI 工具与自动化——驱动我的不是专业对口，是好奇心。它让我追问"为什么"，也让我动手"做出来"。',
-                    en: 'Liberal arts background, self-taught in Python, AI tools and automation. What drives me isn\'t a matching degree — it\'s curiosity. It makes me ask "why?" and pushes me to "build it."',
+                    zh: '从业务场景出发，用数据定位问题，再用 AI 与自动化把方案做成稳定运行的流程。',
+                    en: 'Start from the business scenario, locate the problem with data, then use AI and automation to ship a reliable workflow.',
                   })}
                 </p>
               </div>
@@ -114,7 +116,7 @@ export function AboutSection() {
                 </div>
               </div>
 
-              {curiositySignals.map((signal) => (
+              {proofSignals.map((signal) => (
                 <div key={t(signal.label)} className="metric-card rounded-3xl p-5">
                   <InfoRow
                     label={t(signal.label)}

@@ -2,14 +2,14 @@ import type { SkillCategory } from '../types';
 
 export const skills: SkillCategory[] = [
   {
-    id: 'ai-product-ops',
-    categoryName: { zh: 'AI 产品运营', en: 'AI Product Ops' },
+    id: 'operations',
+    categoryName: { zh: '运营能力', en: 'Operations' },
     items: [
-      { name: { zh: 'SOP 沉淀', en: 'SOP Systemization' }, percentage: 94, color: '#d8b66d' },
-      { name: { zh: '业务规则化', en: 'Business Rule Design' }, percentage: 92, color: '#b9c38d' },
-      { name: { zh: '需求访谈', en: 'User Interview' }, percentage: 90, color: '#d28a5c' },
+      { name: { zh: '业务流程拆解', en: 'Workflow Diagnosis' }, percentage: 94, color: '#d8b66d' },
+      { name: { zh: '用户需求洞察', en: 'User Insight' }, percentage: 92, color: '#b9c38d' },
+      { name: { zh: '业务规则设计', en: 'Business Rule Design' }, percentage: 90, color: '#d28a5c' },
       { name: { zh: 'RICE 优先级', en: 'RICE Prioritization' }, percentage: 88, color: '#8fae9f' },
-      { name: { zh: '产品迭代协同', en: 'Product Iteration' }, percentage: 86, color: '#c9a66b' },
+      { name: { zh: 'SOP 沉淀复用', en: 'SOP Systemization' }, percentage: 86, color: '#c9a66b' },
     ],
   },
   {
@@ -27,8 +27,8 @@ export const skills: SkillCategory[] = [
     id: 'automation-delivery',
     categoryName: { zh: '自动化落地', en: 'Automation Delivery' },
     items: [
-      { name: { zh: 'Codex / Claude Code', en: 'Codex / Claude Code' }, percentage: 98, color: '#d8b66d' },
-      { name: { zh: 'Cursor', en: 'Cursor' }, percentage: 98, color: '#b9c38d' },
+      { name: { zh: 'Codex', en: 'Codex' }, percentage: 98, color: '#d8b66d' },
+      { name: { zh: 'Claude Code', en: 'Claude Code' }, percentage: 98, color: '#b9c38d' },
       { name: { zh: '飞书 Base', en: 'Lark Base' }, percentage: 98, color: '#8fae9f' },
       { name: { zh: 'N8N', en: 'N8N' }, percentage: 98, color: '#c9a66b' },
       { name: { zh: '影刀 RPA', en: 'ShadowBot RPA' }, percentage: 90, color: '#9db5a8' },

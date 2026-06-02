@@ -27,15 +27,15 @@ export function ContactSection() {
       <div className="max-w-7xl mx-auto w-full">
         <SectionTitle
           number="06."
-          title={{ zh: '下一个问题', en: 'Next Question' }}
+          title={{ zh: '保持联系', en: 'Contact' }}
         />
 
         <div className="max-w-4xl">
           <ScrollReveal direction="up" duration={0.5}>
             <p className="mb-8 max-w-2xl font-editorial text-2xl leading-9 text-cyber-dim">
               {t({
-                zh: '如果你正在寻找一个能把好奇心、AI 工具、数据分析和业务落地连接起来的人，欢迎联系我进一步沟通。',
-                en: "If you're looking for someone who connects curiosity, AI tools, data analysis and business delivery, feel free to reach out.",
+                zh: '如果你正在寻找一个能够理解业务、分析数据，并用 AI 工具推动方案落地的人，欢迎联系我进一步沟通。',
+                en: "If you're looking for someone who understands operations, analyzes data and ships solutions with AI tools, feel free to reach out.",
               })}
             </p>
           </ScrollReveal>
