@@ -75,6 +75,17 @@
     position: relative;
     isolation: isolate;
   }
+
+  #lenis-wrapper {
+    position: relative;
+    isolation: isolate;
+  }
+
+  #lenis-wrapper > main,
+  #lenis-wrapper > footer {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 @layer components {

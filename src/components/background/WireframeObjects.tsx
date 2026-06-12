@@ -8,8 +8,12 @@ interface WireframeObjectsProps {
 
 function RotatingTorus() {
   const ref = useRef<THREE.Mesh>(null);
-  useFrame((_, delta) => {
-    if (ref.current) ref.current.rotation.x += delta * 0.3;
+  useFrame(({ clock }) => {
+    if (!ref.current) return;
+    const elapsed = clock.getElapsedTime();
+    ref.current.rotation.x = Math.sin(elapsed * 0.38) * 0.5 + elapsed * 0.08;
+    ref.current.rotation.y = Math.cos(elapsed * 0.21) * 0.28;
+    ref.current.position.y = 1 + Math.sin(elapsed * 0.31) * 0.28;
   });
   return (
     <mesh ref={ref} position={[3, 1, -4]}>
@@ -21,10 +25,12 @@ function RotatingTorus() {
 
 function RotatingIcosahedron() {
   const ref = useRef<THREE.Mesh>(null);
-  useFrame((_, delta) => {
+  useFrame(({ clock }) => {
     if (ref.current) {
-      ref.current.rotation.x += delta * 0.2;
-      ref.current.rotation.y += delta * 0.4;
+      const elapsed = clock.getElapsedTime();
+      ref.current.rotation.x = Math.sin(elapsed * 0.27 + 0.6) * 0.72;
+      ref.current.rotation.y = elapsed * 0.12 + Math.cos(elapsed * 0.39) * 0.4;
+      ref.current.position.x = -3.5 + Math.cos(elapsed * 0.19) * 0.34;
     }
   });
   return (
@@ -42,10 +48,12 @@ function RotatingIcosahedron() {
 
 function RotatingDodecahedron() {
   const ref = useRef<THREE.Mesh>(null);
-  useFrame((_, delta) => {
+  useFrame(({ clock }) => {
     if (ref.current) {
-      ref.current.rotation.y += delta * 0.35;
-      ref.current.rotation.z += delta * 0.25;
+      const elapsed = clock.getElapsedTime();
+      ref.current.rotation.y = Math.sin(elapsed * 0.33) * 0.66;
+      ref.current.rotation.z = elapsed * 0.1 + Math.cos(elapsed * 0.24) * 0.4;
+      ref.current.position.y = -2 + Math.sin(elapsed * 0.23 + 2.2) * 0.2;
     }
   });
   return (

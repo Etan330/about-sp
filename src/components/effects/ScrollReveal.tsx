@@ -10,10 +10,10 @@ interface ScrollRevealProps {
 }
 
 const directionOffset = {
-  up: { y: 60, x: 0 },
-  down: { y: -60, x: 0 },
-  left: { y: 0, x: -60 },
-  right: { y: 0, x: 60 },
+  up: { y: 60, x: 0, rotate: -1.4 },
+  down: { y: -60, x: 0, rotate: 1.4 },
+  left: { y: 0, x: -60, rotate: 1.8 },
+  right: { y: 0, x: 60, rotate: -1.8 },
 };
 
 export function ScrollReveal({
@@ -27,13 +27,19 @@ export function ScrollReveal({
 
   return (
     <motion.div
-      initial={{ opacity: 0, ...offset }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      initial={{
+        opacity: 0,
+        scale: 0.965,
+        rotate: offset.rotate,
+        x: offset.x,
+        y: offset.y,
+      }}
+      whileInView={{ opacity: 1, rotate: 0, scale: 1, x: 0, y: 0 }}
       viewport={{ once: false, margin: '-50px' }}
       transition={{
         duration,
         delay,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: [0.16, 1, 0.3, 1],
       }}
       className={className}
     >
