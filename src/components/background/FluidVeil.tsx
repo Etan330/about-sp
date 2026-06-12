@@ -85,6 +85,7 @@ export function FluidVeil({ compact }: FluidVeilProps) {
   const groupRef = useRef<THREE.Group>(null);
   const pointerRef = useRef(new THREE.Vector2(0, 0));
   const easedPointerRef = useRef(new THREE.Vector2(0, 0));
+  const elapsedRef = useRef(0);
 
   useEffect(() => {
     const onMove = (event: MouseEvent) => {
@@ -112,8 +113,9 @@ export function FluidVeil({ compact }: FluidVeilProps) {
     [compact],
   );
 
-  useFrame(({ clock }) => {
-    const elapsed = clock.getElapsedTime();
+  useFrame((_, delta) => {
+    elapsedRef.current += delta;
+    const elapsed = elapsedRef.current;
     easedPointerRef.current.lerp(pointerRef.current, 0.035);
 
     uniforms.forEach((uniformSet, index) => {
